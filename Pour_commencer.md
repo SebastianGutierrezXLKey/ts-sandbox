@@ -103,3 +103,7 @@ npm run dev
 ```bash
 npx ts-node src/playground/basic_types_exercises.ts
 ```
+```bash
+npx tsc src/playground/basic_types_exercises.ts --outDir dist
+node dist/basic_types_exercises.ts
+```
