@@ -53,7 +53,7 @@ if (typeof variableUnknown === "string") {
   console.log(variableUnknown.toUpperCase()); // Fonctionne car on a vérifié le type
 } else {
   console.log("Ce n'est pas une chaîne de caractères");
-
+}
 // 8. Inférence de type
 let city = "Montréal"; // TypeScript devine string
 // city = 100; // ❌ Erreur

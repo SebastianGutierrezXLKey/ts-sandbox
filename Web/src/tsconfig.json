@@ -1,0 +1,15 @@
+// This file is part of the TypeScript Learning project
+// It was created to configure TypeScript settings for the Web application
+// The Terminal commands to create this file
+// npx tsc --init --outDir ./Web/public/scripts
+// To create the .js file, run:
+// npx tsc --project Web/tsconfig.json
+// The file is located at: Web/public/scripts/tsconfig.json
+{
+  "compilerOptions": {
+    "outDir": "../public/scripts",
+    "module": "commonjs",
+    "target": "ES6",
+    "strict": true,
+  }
+}

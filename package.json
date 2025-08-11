@@ -5,7 +5,43 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only playground/006_classes.ts"
+    
+    // Scripts par thème
+    "types": "ts-node playground/01-types/001_basic_types_excercises.ts",
+    "types-advanced": "ts-node playground/01-types/002_additional_types_practice.ts",
+    "data-collection": "ts-node playground/01-types/003_data_collection.ts",
+    
+    "interfaces": "ts-node playground/02-interfaces/004_methods.ts",
+    "interfaces-advanced": "ts-node playground/02-interfaces/005_interface_excercises.ts",
+    
+    "classes": "ts-node playground/03-classes/006_classes.ts",
+    "classes-impl": "ts-node playground/03-classes/007_implementation_classes.ts",
+    "classes-access": "ts-node playground/03-classes/008_public_or_protected.ts",
+    
+    "generics": "ts-node playground/04-generics/009_generics.ts",
+    
+    // Scripts de développement avec hot-reload
+    "dev": "ts-node-dev --respawn --transpile-only playground/01-types/001_basic_types_excercises.ts",
+    "dev-types": "ts-node-dev --respawn --transpile-only playground/01-types/",
+    "dev-interfaces": "ts-node-dev --respawn --transpile-only playground/02-interfaces/",
+    "dev-classes": "ts-node-dev --respawn --transpile-only playground/03-classes/",
+    "dev-generics": "ts-node-dev --respawn --transpile-only playground/04-generics/",
+    
+    // Scripts de compilation
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    
+    // Scripts d'exécution rapide
+    "playground": "ts-node playground/01-types/001_basic_types_excercises.ts",
+    
+    // Scripts pour les projets spécifiques
+    "build:dom": "tsc -p DOM/tsconfig.json",
+    "build:web": "tsc -p Web/tsconfig.json",
+    "build:react": "cd React/vite-project && npm run build",
+    
+    "dev:dom": "tsc -p DOM/tsconfig.json --watch",
+    "dev:web": "tsc -p Web/tsconfig.json --watch",
+    "dev:react": "cd React/vite-project && npm run dev"
   },
   "repository": {
     "type": "git",

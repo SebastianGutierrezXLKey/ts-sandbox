@@ -8,7 +8,7 @@
 // > Méthode(s)
 
 // le mots reservé export la rend accesible aux autres fichiers
-class User {
+export class User {
     name: string;
     age: number;
     isDev: boolean;
@@ -30,6 +30,7 @@ class User {
         return `Bonjour, je suis ${this.name} et j'ai ${this.age} ans.`;
     }
 }
+
 // Exemple d'utilisation de la classe User
 // Ceci est juste un test, l'implémentation peut être séparée
 //let person = new User("Sebastian", 33, true);

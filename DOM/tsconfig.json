@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Configuration de base
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    
+    // Sortie
+    "outDir": "./",
+    "rootDir": "./",
+    
+    // Options strictes
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    
+    // Compatibilité
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    // Génération
+    "sourceMap": true,
+    "declaration": false,
+    
+    // Modules
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "*.js"
+  ]
+} 

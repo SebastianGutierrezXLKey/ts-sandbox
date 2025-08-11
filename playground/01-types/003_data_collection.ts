@@ -5,6 +5,10 @@
 // 1. Liste de chaînes de caractères
 let allNames: string[] = ["Sebastian","Alice", "Bob", "Charlie","Marc"];
 console.log("Noms: ", allNames)
+// Accès au premier nom
+let FirstName: any = allNames[0]; // Accès au premier nom
+console.log("Premier nom: ", FirstName ) // Affiche le premier nom
+console.log("Longitude du premier nom: ", FirstName.length) // Affiche la longueur du premier nom
 
 let allAges: number[] = [33, 25, 30, 28, 40];
 console.log("Âges: ", allAges)

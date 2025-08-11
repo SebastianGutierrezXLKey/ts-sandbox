@@ -107,3 +107,16 @@ npx ts-node src/playground/basic_types_exercises.ts
 npx tsc src/playground/basic_types_exercises.ts --outDir dist
 node dist/basic_types_exercises.ts
 ```
+
+### 9. Organisation d'un site web
+Organisation recommendée
+```bash
+WebSite/
+│
+├── public/
+│   ├── scripts/      # Fichiers .js par exemple
+│   │   └── main.js
+│   ├── index.html
+├── src/              # Pas nécessaire sur le serveur de production (host)
+|   └── tsconfig.json # Configurer fichiers compilés   
+```
